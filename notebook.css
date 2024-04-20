@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Ojuju:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" );
+
+ *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* @font-face {
+    font-family: "Inria_Sans", "Josefin_Sans" , "Madimi_One" , "Ojuju ", "PT_Serif" , "Inria_Sans";
+    src :url(project/fonts);
+
+} */
+
+body {
+    padding:2px;
+}
+
+.heading {
+    height:50px;
+    border-radius: 5px;
+    font-size:20px;
+    font-style:italic;
+    color:rgb(85, 82, 82);
+    background-color: black;
+    text-align: center;
+}
+.subheading {
+    text-align: center;
+    display:flex;
+    height:25px;
+    background-color: grey;
+    justify-content: center;
+    
+
+}
+.dropdown {
+    margin-left:10px;
+  
+}
+
+#notepad {
+    margin:3px;
+    padding:5px;
+    height:800px;
+    width:100%;
+    
+}
+.arial {
+    font-family: "Madimi One", sans-serif;
+}
+.verdana {
+  font-family: "Ojuju", sans-serif;
+}
+.helvetica {
+    font-family: "Roboto Condensed", sans-serif;
+}
+.timesnewroman {
+    font-family:"Inria Sans", sans-serif;
+}
+.couriernew {
+    font-family:  "PT Serif", serif;
+}
+.gorgia {
+    font-family:"Josefin Sans", sans-serif;
+}

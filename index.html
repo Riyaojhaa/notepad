@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Madimi+One&family=Ojuju:wght@200..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="notebook.css" class="src">
+</head>
+
+<body>
+    <section class="heading">
+        <div>
+            <h2>My Notepad &#128211</h2>
+        </div>
+    </section>
+    <section class="subheading">
+        <div class="dropdown">
+            <select name="File" id="fileDropdown">
+                <option value="File">File</option>
+                <!-- <option value="Open">Open</option> -->
+                <option value="Download" id="saveButton" onclick="savePage()">Download</option>
+                <!-- <option value="Save As">Save As</option> -->
+                <!-- <option value="Share">Share</option> -->
+                <option value="Delete">Delete</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select id="edit" name="edit">
+                <option value="edit">Edit</option>
+                <option value="cut" onclick="handlecuttextfromarea()">cut</option>
+                <option value="copy" onclick="handlecopytextfromarea()">copy</option>
+                <option value="paste" onclick="handlepastefromarea()">Paste</option>
+                <!-- <option value="highlight" onclick="handlehighlights()">highlight</option> -->
+                <option value="bold" onclick="bold()">Bold</option>
+                <option value="italic" onclick="italic()">Italic</option>
+                <option value="centeralign" onclick="centeralign()">Center align</option>
+                <option value="rightalign" onclick="rightalign()">right align</option>
+                <option value="leftalign" onclick="leftalign()">left align</option>
+                <option value="uppercase" onclick="uppercase()">uppercase</option>
+                <option value="lowercase" onclick="lowercase()">lowercase</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select id="fontstyle" name="Fonts">
+                <option value="Fontstyle">Font-style</option>
+                <option value="arial" class="arial">Arial</option>
+                <option value="Verdana" class="verdana">Verdana</option>
+                <option value="Helvetica" class="helvetica">Helvetica</option>
+                <option value="Times New Roman" class="timenewroman">Times New Roman</option>
+                <option value="Courier New" class="couriernew">Courier New</option>
+                <option value="Georgia" class="georgia">Georgia</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select id="textsize" name="Textsize">
+                <option value="text-size">Text-Size</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+            </select>
+        </div>
+        <div class="dropdown">
+            <select id="theme" name="Font size">
+                <option value="File">Themes</option>
+                <option id="white" value="white">White</option>
+                <option id="black" value="black">dark</option>
+                <option id="green" value="green">greenery</option>
+                <option id="yellow" value="yellow">Mean girls</option>
+                <option id="red" value="red">love</option>
+                <option id="pink" value="pink">chill</option>
+            </select>
+        </div>
+    </section>
+    <section class="lines">
+        <textarea id="notepad" name="notes" placeholder="write your notes here">
+
+        </textarea>
+    </section>
+    <!-- <button onclick = changecontent()>
+        Delete
+    </button> -->
+    <script src="notebook.js"></script>
+</body>
+
+</html>
